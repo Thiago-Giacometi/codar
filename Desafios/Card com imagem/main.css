@@ -1,0 +1,67 @@
+html,
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+
+  background-color: #E5E5E5;
+  font-family: 'Space Grotesk', sans-serif;
+}
+
+.card {
+  width: 320px;
+  height: 432px;
+
+}
+
+.image{
+  margin-bottom: -5px;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  background-color: #fff;
+  border-radius: 0px 0px 32px 32px;
+
+  padding: 24px;
+  
+}
+
+.title {
+  font-size: 32px;
+  line-height: 40px;
+  font-weight: 700;
+}
+
+.user {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.user-name {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #18161F;
+}
+
+.text-gray{
+  color: #787491;
+}
+
+.footer{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.view, .comment{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+}

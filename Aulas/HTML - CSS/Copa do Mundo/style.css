@@ -1,0 +1,112 @@
+* {
+  margin: 0;
+}
+
+body {
+  display: flex;
+  justify-content: space-between;
+}
+
+.conteudo_original {
+  display: flex;
+  flex-direction: column;
+}
+
+tbody, thead {
+  text-align: center;
+}
+
+td, th {
+  padding: 5px 10px;
+}
+
+td:nth-child(2) {
+  display: flex;
+  justify-content: center;
+}
+
+
+th {
+  font-weight: bold;
+}
+
+tr {
+  line-height: 30px;
+}
+
+img {
+  width: 30px;
+}
+
+tbody tr:last-child td {
+  border-bottom: none
+}
+
+h2 {
+  margin-bottom: 10px;
+}
+
+
+/* ESQUERDO */
+
+.original {
+  background-color: rgb(107, 0, 128);
+  width: 50%;
+  min-height: 100vh;
+  
+  padding: 30px;
+}
+
+table {
+  background-color: rgb(73, 1, 73);
+  border-radius: 15px;
+  border-spacing: 0px;
+  padding: 0 ;
+}
+
+td, th{
+  border-bottom: 1px solid orange;
+}
+
+.orange {
+  color: orange;
+  margin-bottom: 25px;
+}
+
+tbody td:first-child {
+  color: orange;
+}
+
+
+/* DIREITO */
+
+.myTable {
+  background-color: rgb(54, 51, 51);
+  width: 50%;
+  min-height: 100vh;
+
+  color: white;
+}
+
+.myTable table {
+  background-color: rgb(26, 25, 25);
+}
+
+.white {
+  color: white;
+  margin-bottom: 25px;
+}
+
+.myTable td {
+  padding: 0 15px;
+  border-bottom: 1px solid red;
+}
+
+.myTable th {
+  padding: 0 15px;
+  border-bottom: 1px solid red;
+}
+
+.myTable tbody td:first-child {
+  color: red;
+}

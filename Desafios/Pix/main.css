@@ -1,0 +1,54 @@
+* {
+  margin: 0;
+  font-family: 'Space Grotesk', sans-serif;
+}
+
+body,
+html {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #E5E5E5;
+  height: 100%;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 12px;
+
+  width: 160px;
+  padding: 32px 24px;
+
+  background-color: #FFFFFF;
+  border-radius: 32px;
+}
+
+.text {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 28px;
+
+  color: #787491;
+
+  padding-bottom: 4px;
+
+}
+
+.price {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 48px;
+  color: black;
+}
+
+.container:hover, .container:hover .price, .container:hover svg path{
+  color: white;
+  stroke: white;
+  background-color: black;
+}
+
+.container:hover .text{
+  color: #D6D4E2;
+}
