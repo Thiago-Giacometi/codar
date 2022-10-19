@@ -9,13 +9,13 @@
 */
 const numeros = [1,2,3,4,5,6,7]
 
-const forEach = function(array, parImpar) {
+const forEach = function(array, callback) {
   for(let i = 0; i < array.length; i++) {
-    parImpar(array[i])
+    callback(array[i])
   }
 }
 
-const callback = (item) => {
+const parImpar = (item) => {
   if(item%2==0) {
     console.log(`O número ${item} é par`)
   } else {
@@ -23,6 +23,6 @@ const callback = (item) => {
   }
 }
 
-forEach(numeros, callback)
+forEach(numeros, parImpar)
 
 
