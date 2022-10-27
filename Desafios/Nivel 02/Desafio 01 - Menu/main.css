@@ -1,0 +1,56 @@
+* {
+  font-family: 'Space Grotesk', serif;
+}
+
+html, body {
+  width: 1280px;
+  height: 720px;
+}
+
+.aside-menu {
+  width: 256px;
+  height: 720px;
+}
+
+.logo {
+  padding: 24px 60px;
+
+}
+
+.user {
+  padding: 16px 24px;
+
+  display: flex;
+  align-items: center;
+  gap: 16px;
+
+}
+
+.user-name {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  color: #18161F;
+}
+
+.user-course {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: #787491;
+}
+
+.menu {
+  padding: 40px 36px;
+  
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.itens-menu {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+}
+
