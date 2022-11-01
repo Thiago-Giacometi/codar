@@ -41,6 +41,12 @@ body {
   line-height: 24px;
 }
 
+.item-login {
+  border: 2px solid #E8E8E8;
+  border-radius: 90px;
+  padding: 12px 20px;
+}
+
 .button-nav {
   background: #42EC9A;
   border-radius: 90px;
