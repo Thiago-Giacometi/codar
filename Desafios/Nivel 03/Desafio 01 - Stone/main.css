@@ -56,13 +56,12 @@ body {
 
 /**------------------------------HERO----------------------------**/
 
-.container-hero img {
-  width: 1280px;
+.container-hero {
+  background: url(./assets-stone/image\ 1.png) no-repeat;
+  height: 640px;
 }
 
 .hero-text {
-
-
   color: #fff;
   width: 500px;
 
@@ -70,17 +69,17 @@ body {
   flex-direction: column;
   align-items: left;
   justify-content: center;
-  gap: 30px;
-
-  margin-top: -420px;
+  gap: 10px;
   padding-left: 80px;
+
+
 }
 
 .title-hero {
+  margin-top: 258px;
   font-weight: 700;
   font-size: 48px;
   line-height: 56px;
-
 }
 
 .text-hero {
@@ -100,6 +99,7 @@ body {
   border-radius: 90px;
   text-decoration: none;
   width: 140px;
+  margin-top: 14px;
 }
 
 /**------------------------------FRAME 01----------------------------**/
