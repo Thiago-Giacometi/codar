@@ -54,6 +54,9 @@ html {
   border-radius: 16px;
   padding: 16px 32px;
   cursor: pointer;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
 }
 
 .click-task:hover {
@@ -90,5 +93,3 @@ html {
 .pointer {
   cursor: pointer;
 }
-
-
