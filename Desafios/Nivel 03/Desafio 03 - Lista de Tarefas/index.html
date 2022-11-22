@@ -21,37 +21,40 @@
     <div class="create-task">
       <h1 class="title"><img src="./assets/task.svg" alt="">Adicionar uma tarefa</h1>
       <div class="add-task">
-        <input class="input-task" type="text" placeholder="Descreva a tarefa">
-        <button class="click-task">Criar tarefa</button>
+        <input class="input-task" type="text" placeholder="Descreva a tarefa" id="textTask">
+        <button class="click-task" id="addTask">Criar tarefa</button>
       </div>
     </div>
 
     <div class="task-board">
       <h1 class="title"><img src="./assets/board.svg" alt="">Quadro de tarefas</h1>
 
-      <div class="board">
-        <div class="tasks tasks-finished">
-          <p class="task"><img class="pointer" src="./assets/check.svg" alt="">Alinhamento semanal <img
+      <ul id="board" class="board">
+        <li class="tasks ">
+          <p class="task"><img class="check pointer"  src="./assets/Frame.svg" alt="1">Alinhamento semanal <img
               src="./assets/calendar-emoji.png" alt=""></p>
-          <img class="pointer" src="./assets/remove.svg" alt="">
-        </div>
+          <img class=" removeTask pointer" src="./assets/remove.svg" alt="">
+          </li>
 
-        <div class="tasks">
-          <p class="task"><img class="pointer" src="./assets/Frame.svg" alt="">Reunião com cliente<img src="./assets/notes-emoji.png"
+        <li class="tasks">
+          <p class="task"><img class="check pointer"  src="./assets/Frame.svg" alt="2">Reunião com cliente<img src="./assets/notes-emoji.png"
               alt=""></p>
-          <img class="pointer" src="./assets/remove.svg" alt="">
-        </div>
+          <img class="removeTask pointer" src="./assets/remove.svg" alt="">
+          </li>
 
-        <div class="tasks">
-          <p class="task"><img class="pointer" src="./assets/Frame.svg" alt="">Apresentação<img src="./assets/shine-emoji.png" alt="">
+        <li class="tasks">
+          <p class="task"><img  class="check pointer" src="./assets/Frame.svg" alt="3">Apresentação<img src="./assets/shine-emoji.png" alt="">
           </p>
-          <img class="pointer" src="./assets/remove.svg" alt="">
-        </div>
-      </div>
+          <img class="removeTask pointer" src="./assets/remove.svg" alt="">
+        </li>
+      </ul>
 
 
     </div>
   </div>
+
+  <script src="index.js"></script>
+
 </body>
 
 </html>
