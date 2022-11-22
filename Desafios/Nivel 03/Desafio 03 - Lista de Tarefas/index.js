@@ -4,9 +4,13 @@ const board = document.getElementById("board")
 const deleteButton = document.getElementsByClassName("removeTask")
 const checkButton = document.getElementsByClassName("check")
 
+
+// carregar eventos nas tarefas 
 function startApp() {
 
   board.innerHTML = window.localStorage.getItem(`boardStorage`)
+
+
 
   for (let el of checkButton) {
 
@@ -19,6 +23,7 @@ function startApp() {
   }
 }
 
+// Check box da tarefa
 function checkBoxTask() {
   const parent = this.parentNode.parentNode
 
@@ -37,12 +42,15 @@ function checkBoxTask() {
   saveLocalStorage()
 }
 
+// Deletar tarefa
 function deleteTask() {
   const deleteParent = this.parentNode
   deleteParent.remove()
   saveLocalStorage()
 }
 
+
+//butao para adicionar uma nova tarefa, carregar evento nela e atualizar o local storage
 button.addEventListener("click", function () {
   const newTask = document.createElement("li")
   newTask.classList = `tasks`
@@ -58,6 +66,8 @@ button.addEventListener("click", function () {
   startApp();
 });
 
+
+// Adicionando board no local storage
 function saveLocalStorage() {
   window.localStorage.setItem(`boardStorage`, board.innerHTML)
 }
