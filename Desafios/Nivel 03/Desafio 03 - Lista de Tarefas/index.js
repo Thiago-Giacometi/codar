@@ -6,19 +6,20 @@ const checkButton = document.getElementsByClassName("check")
 
 function startApp() {
 
+  board.innerHTML = window.localStorage.getItem(`boardStorage`)
+
   for (let el of checkButton) {
-    el.removeEventListener("click", checkBoxTask)
+
     el.addEventListener('click', checkBoxTask);
   }
 
   for (let el of deleteButton) {
-    el.removeEventListener("click", deleteTask)
+
     el.addEventListener("click", deleteTask)
   }
 }
 
 function checkBoxTask() {
-  console.log(`inicio`)
   const parent = this.parentNode.parentNode
 
   if (this.getAttribute(`src`) == `./assets/Frame.svg`) {
@@ -32,29 +33,36 @@ function checkBoxTask() {
     parent.classList.remove("tasks-finished")
 
   }
+
+  saveLocalStorage()
 }
 
 function deleteTask() {
   const deleteParent = this.parentNode
   deleteParent.remove()
-  console.log(`remove`)
+  saveLocalStorage()
 }
 
-button.addEventListener("click", function() {
+button.addEventListener("click", function () {
   const newTask = document.createElement("li")
   newTask.classList = `tasks`
-  newTask.innerHTML = `<p class="task"><img class="check pointer" src="./assets/Frame.svg" alt="">${input.value} <img
-  src="./assets/calendar-emoji.png" alt=""></p>
+  newTask.innerHTML = `<p class="task"><img class="check pointer" src="./assets/Frame.svg" alt="">${input.value} </p>
 <img class="removeTask pointer" src="./assets/remove.svg" alt="">`
 
   board.appendChild(newTask)
 
   input.value = ``
 
+  saveLocalStorage()
+
   startApp();
 });
 
-startApp();
+function saveLocalStorage() {
+  window.localStorage.setItem(`boardStorage`, board.innerHTML)
+}
+
+startApp()
 
 
 
