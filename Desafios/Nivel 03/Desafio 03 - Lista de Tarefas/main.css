@@ -4,7 +4,6 @@ html {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 100%;
 }
 
 .app {
@@ -13,6 +12,9 @@ html {
   display: flex;
   flex-direction: column;
   gap: 72px;
+
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
 
 .title {
